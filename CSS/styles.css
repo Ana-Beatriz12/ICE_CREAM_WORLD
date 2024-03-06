@@ -1,0 +1,46 @@
+/*CABEÇALHO*/
+body {
+    padding-top: 80px; /* Ajuste a altura do cabeçalho conforme necessário */
+    margin: 0;
+    background-color: #959EA9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #3498db; /* Cor de fundo do cabeçalho */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Cor do texto do logotipo */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Cor do texto do link na navegação */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Cor do ícone do botão de menu */
+}
+
+
+
+
+.container {
+    margin-top: -46px; /* Adiciona a margem desejada */
+    
+}
+
+.minha-imagem {
+    position: absolute;
+    top: 200px; /* Posição a partir do topo */
+    left: 30px; /* Posição a partir da esquerda */
+
+}
+
+
+
+
+
+
+
