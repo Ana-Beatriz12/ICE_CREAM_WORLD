@@ -1,6 +1,11 @@
 #logo-ice-cream-world{
-    margin-bottom: 3575px !important;
+    margin-top: 3px ;
     position:relative;
+    width:5px ;
+    height:300px ;
+}
 
+.tela-login .container{
+    background-color: black;
 }
 
