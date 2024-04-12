@@ -1,15 +1,15 @@
 /*CABEÇALHO*/
 body {
     padding-top: 90px; /* Ajuste a altura do cabeçalho conforme necessário */
-    margin: 0;
+    margin: 12px;
     background-color: red;
-    margin: 0;
-    padding: 0;
+    padding: 12px;
     opacity: 0.5;
+    margin-right: 89px;
 }
 
 .navbar {
-    background-color: #3498db; /* Cor de fundo do cabeçalho */
+    background-color: #000910; /* Cor de fundo do cabeçalho */
 }
 
 .navbar-brand {
