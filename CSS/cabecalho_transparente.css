@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+
+html{
+    height: 500vh;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* deixa os elementos bem divididos nas estremidades. */
+}
+
+header{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding:60px 4% ; /*o 60px deixa afastado do topo. e o 4% é na esquerda e direita*/
+}
+
+header img{
+    font-size: 30px;
+    width: 129px;
+}
+
+header ul{
+    list-style-type: none;/*tira as bolinhas que tem ao lado da lista, do menu*/
+}
+
+header ul li{
+    display: inline-block;/* aqui vai deixar os botoes de acesso as paginas um ao lado do outro(entregas,produtos,nossa-loja)*/
+    margin: 0 40px;/* aqui serve para dar uma afastada os botoes um no outro, o 0 é de em cima e em baixo, já o 40 é a distancia que eles terão um do outro da esquerda e direita.*/
+}
+
+header ul li a{
+    color:white;
+    text-decoration: none;/*aqui tira as linhas que ficam embaixo deles.*/
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(../IMG/img_pagCremora_fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;/*aqui ele cobre todo o espaço do baineer*/
+}
+
+
+.banner h1{
+   font-size: 4em;
+}
+
+.banner h1 span{
+    background-color:aquamarine;/*aqui ele deixa a cor de uma parte do titulo diferente. com outra cor.*/
+}
+
+
+.btn-conta button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #B04336;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+
