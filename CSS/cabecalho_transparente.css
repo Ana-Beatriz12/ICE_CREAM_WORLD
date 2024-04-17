@@ -26,6 +26,16 @@ header{
     position: fixed;
     width: 100%;
     padding:60px 4% ; /*o 60px deixa afastado do topo. e o 4% é na esquerda e direita*/
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: rgb(241, 97, 97);
+    padding:20px 4% ; 
+}
+
+header.rolagem a{
+    color: white;
 }
 
 header img{
@@ -47,6 +57,7 @@ header ul li a{
     text-decoration: none;/*aqui tira as linhas que ficam embaixo deles.*/
 }
 
+
 .banner{
     height: 100vh;
     background-image: url(../IMG/img_pagCremora_fundo.png);
@@ -56,13 +67,24 @@ header ul li a{
 }
 
 
-.banner h1{
-   font-size: 4em;
+.banner .titulo-cremora h1{
+   font-size: 6em;
+   margin-left: 45px;
+   padding-top: 255px;
+   margin-bottom: 67px;
+   color: white;
+   
+}
+
+.banner .titulo-cremora p{
+    color: white;
+    text-align: justify;
 }
 
 .banner h1 span{
     background-color:aquamarine;/*aqui ele deixa a cor de uma parte do titulo diferente. com outra cor.*/
 }
+
 
 
 .btn-conta button{
@@ -75,6 +97,7 @@ header ul li a{
     cursor: pointer;
     transition: .2s;
 }
+
 
 
 
