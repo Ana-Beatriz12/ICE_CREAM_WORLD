@@ -55,6 +55,7 @@ header ul li{
 header ul li a{
     color:white;
     text-decoration: none;/*aqui tira as linhas que ficam embaixo deles.*/
+    font-size: 2em; /* ele aumenta o tamanho das letras do menu.*/
 }
 
 
@@ -79,6 +80,10 @@ header ul li a{
 .banner .titulo-cremora p{
     color: white;
     text-align: justify;
+    font-size: 2em;
+    text-align:start;
+    margin-left: 34px;
+    margin-right: 34px;
 }
 
 .banner h1 span{
@@ -86,19 +91,32 @@ header ul li a{
 }
 
 
-
 .btn-conta button{
-    width: 120px;
-    height: 40px;
+    width: 160px;
+    height: 70px;
     border: 0;
     background-color: #B04336;
-    border-radius: 20px;
+    border-radius: 30px;
     color: white;
     cursor: pointer;
     transition: .2s;
+    font-size: 1.7em;
 }
 
 
 
+.banner-2{
+    height: 100vh;
+    background-image: url(../IMG/img_pagCremora_fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;/*aqui ele cobre todo o espaço do baineer*/
+}
+
+.banner-2 .img-shake img{
+    align-items: center;
+    margin-top: 78px !important;
+    
+}
 
 
