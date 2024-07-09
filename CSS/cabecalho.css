@@ -2,7 +2,7 @@
 body {
     padding-top: 90px; /* Ajuste a altura do cabeçalho conforme necessário */
     margin: 12px;
-    background-color: red;
+    background-color: rgb(18, 17, 17);
     padding: 12px;
     opacity: 0.5;
     margin-right: 89px;
@@ -14,16 +14,22 @@ body {
 
 .navbar-brand {
     color: #ffffff; /* Cor do texto do logotipo */
+    box-shadow: none;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff; /* Cor do texto do link na navegação */
+    color: #f20d0d; /* Cor do texto do link na navegação */
 }
 
 .navbar-toggler-icon {
-    background-color: #ffffff; /* Cor do ícone do botão de menu */
+    background-color: #e81c1c; /* Cor do ícone do botão de menu */
 }
 
+
+.container-cremora .container-fluid{
+    background-color: #000910;
+    background: #000910;
+}
 
 
 

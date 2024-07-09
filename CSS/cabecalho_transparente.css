@@ -20,7 +20,7 @@ html{
     justify-content: space-between;/* deixa os elementos bem divididos nas estremidades. */
 }
 
-header{
+header{/*cabeçalho*/
     top: 0;
     left: 0;
     position: fixed;
@@ -78,7 +78,7 @@ header ul li a{
 }
 
 .banner .titulo-cremora p{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: justify;
     font-size: 2em;
     text-align:start;
