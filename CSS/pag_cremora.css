@@ -1,18 +1,37 @@
 
+.container-fluid{
+  height: 100vh;
+  background-image: url(../IMG/img_pagCremora_fundo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;/*aqui ele cobre todo o espaço do baineer*/
+ }
 
 
+ /*TITULOS E PARAGRAFOS DO CORPO DO TEXTO.*/
 
- .container .titulo-cremora h1{
+
+  .titulo-cremora h1{
     
    font-size: 69px;
    padding-top: 100px;
-   color: rgb(89, 16, 16);
-    align-items: end;
- 
-
-
-    
+   color: rgb(255, 255, 255);
+   text-align: end;
+   align-items: end;
  }
+
+
+ .paragrafo-cremora h1{
+   font-size: 20px;
+   padding-top: 100px;
+   color: rgb(255, 255, 255);
+  text-align: end;
+  
+ }
+
+
+
+
 /* 
  font-size: 6em;
     padding-top: 100px;
