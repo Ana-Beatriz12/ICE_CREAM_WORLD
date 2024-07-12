@@ -11,30 +11,30 @@
  /*TITULOS E PARAGRAFOS DO CORPO DO TEXTO.*/
 
 
-  .titulo-cremora h1{
+  .container-fluid .titulo-cremora h1{
     
    font-size: 69px;
    padding-top: 100px;
    color: rgb(255, 255, 255);
-   text-align: end;
-   align-items: end;
+   text-align:justify;
+   align-items: start;
+   margin: 38px;
+
  }
 
 
  .paragrafo-cremora h1{
-   font-size: 20px;
+   font-size: 38px;
    padding-top: 100px;
    color: rgb(255, 255, 255);
-  text-align: end;
-  
+   text-align:justify;
+   align-items: start;
+   margin: 38px;
+
  }
 
 
 
-
-/* 
- font-size: 6em;
-    padding-top: 100px;
-    color: rgb(89, 16, 16);
-    align-items: start;
-    margin-left: -217px; */
+.container{
+  
+}
