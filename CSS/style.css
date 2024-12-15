@@ -1,0 +1,302 @@
+ 
+  /*HEADER CABEÇALHO*/
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+  * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+  }
+  
+  /* Ajuste no cabeçalho */
+  header {
+    background-color: #ef6abe;/*Cor do cabeçalho*/
+    box-shadow: 0px 3px 10px #a31f6a;
+    position: relative; /* Adicione esta linha */
+    z-index: 10; /* Adicione esta linha */
+  }
+  
+  /* Ajuste no menu mobile */
+  .mobile-menu {
+    display: none;
+    position: absolute; /* Mude para absolute */
+    top: 60px; /* Ajuste conforme necessário */
+    left: 0;
+    width: 100%;
+    background-color: #e23cdc;
+    z-index: 9; /* Adicione esta linha */
+  }
+  
+  /* Ajuste no botão do menu */
+  .mobile-menu-icon {
+    display: none;
+    z-index: 11; /* Adicione esta linha */
+  }
+  
+  /* Media query para mobile */
+  @media screen and (max-width: 730px) {
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu.open {
+        display: flex; /* Exibe o menu quando aberto */
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+  }
+  
+  .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 6rem;
+  }
+  
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo h1 {
+      color: #fff;
+  }
+  
+  .nav-list {
+      display: flex;
+      align-items: center;
+  }
+  
+  .nav-list ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  }
+  
+  .nav-item {
+      margin: 0 15px;
+  }
+  
+  .nav-link {
+      text-decoration: none;
+      font-size: 1.15rem;
+      color: #fff;
+      font-weight: 400;
+  }
+  
+  .login-button button {
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #0187a7;
+  }
+  
+  .login-button button a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.1rem;
+  }
+  
+  .mobile-menu-icon {
+      display: none;
+  }
+  
+  .mobile-menu {
+      display: none;
+  }
+  
+  @media screen and (max-width: 730px) {
+      .nav-bar {
+          padding: 1.5rem 4rem;
+      }
+      .nav-item {
+          display: none;
+      }
+      .login-button {
+          display: none;
+      }
+      .mobile-menu-icon {
+          display: block;
+      }
+      .mobile-menu-icon button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+      }
+      .mobile-menu ul {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding-bottom: 1rem;
+      }
+      .mobile-menu .nav-item {
+          display: block;
+          padding-top: 1.2rem;
+      }
+      .mobile-menu .login-button {
+          display: block;
+          padding: 1rem 2rem;
+      }
+      .mobile-menu .login-button button {
+          width: 100%;
+      }
+      .open {
+          display: block;
+      }
+  }
+  
+  .mobile-menu {
+    display: none; /* Oculta o menu mobile por padrão */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #9f3939;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+}
+
+.mobile-menu.open {
+    display: block; /* Mostra o menu quando estiver aberto */
+}
+  
+
+/*FIM DO CABEÇALHO*/
+
+
+/*PAG hOME*/
+
+  /* Remove margens e paddings para evitar comportamentos indesejados */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*MEDIA TITULO HOME ICE CREAM*/
+  /*TIRANDO A MARGIN DO PARAGRAFO OLÁ MEU NOME É*/
+  /*AQUI AJUSTA A ALTURA DE ESPAÇAMENTO DO PARAGRAFO OLA  EM MOBILE*/
+  @media (max-width: 1217px) {
+    .container #titulo-iceCream-home h1{
+       margin-bottom: -5px;
+       margin-top: 3px;/*altura entre o cabeçalho eo titulo ola.*/
+    }}
+  
+  /*PAG SOBRE MIM*/
+  /*TITULO SOBRE MIM*/
+  .container .titulo-iceCream-home h1{
+    /* font-size: 50px; */
+    color: white;
+    font-size: 3em;
+    margin-left: 45px;
+    padding-top: 123px;/*DÁ ESPAÇAMENTO DO TITULO DO CABEÇALHO*/
+    margin-bottom: 6px;
+    color: white;
+    text-transform: uppercase;
+  
+  }
+  
+  /*DESCRIÇÃO SOBRE MIM*/
+  .container #text-iceCream-home h3{
+    color: white;
+    font-size: 25px;
+    margin-block: 34px;
+    /* text-transform: inherit; */
+    /* text-align: left; */
+    width: 523px;
+  }
+  @media only screen and (max-width:500px ) and (min-width: 375px) {
+    .container #paragrafo-sobreMim h3{
+      width: 100px;
+    }
+    .container #paragrafo-sobreMim h3{
+      width: 300px;
+    }
+  }
+  
+  @media(max-width: 360px){
+    .container #paragrafo-sobreMim h3{
+      width: 325px;
+    }
+    
+  }
+  
+  
+  /*IMAGEM EU SOBRE-MIM PAGE*/
+  
+  /* Estilização do container da imagem */
+  .container .img-container-sobre {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Alinha no canto direito */
+    margin-right: 20px; /* Espaçamento da margem direita */
+    margin-top: -220px;
+  }
+  
+  /* O quadrado por trás da imagem */
+  .quadrado-sobre {
+    width: 350px; /* Tamanho do quadrado */
+    height: 370px;/*aumenta para baixo*/
+    border: 6px solid  rgb(253, 253, 253);
+    position: absolute;
+    top: -172px; 
+    right: -10px; /* Desloca o quadrado um pouco para a esquerda */
+    z-index: 1; /* Coloca o quadrado atrás da imagem */
+  }
+  
+  /*SOMBRA ATRÁS DO QUADRADO IMAGEM SOBRE MIM*/
+  .quadrado-sobre{
+    box-shadow: 20px 20px 80px -30px  #ea6298;
+  }
+  
+  /* Estilo da imagem */
+  .img-sobre img {
+    position: relative;
+    z-index: 2; /* Coloca a imagem na frente do quadrado */
+    width: 330px; /* Tamanho da imagem */
+    height: 357px;
+    margin-right: 0; /* Remove margens adicionais à direita */
+    margin-top: -165px; /* Ajuste a sobreposição */
+    left: 12px;
+  
+  
+  }
+  
+  /*MEDIA SOBRE IMAGE*/
+  @media (max-width: 1217px) {
+    .img-sobre img{
+        visibility: hidden;/*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center; /* Centraliza verticalmente */
+    }
+    .quadrado-sobre{
+        visibility: hidden;/*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center; /* Centraliza verticalmente */
+    }
+    
+  
+  } 
+  
+  
+  @media (max-width:375px) {
+    .img-sobre img{
+        visibility: hidden;/*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center; /* Centraliza verticalmente */
+    }
+    .quadrado-sobre{
+        visibility: hidden;/*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center; /* Centraliza verticalmente */
+    }
+    
+  
+  } 
+  
+  /*FIM DA IMAGEM MINHA SOBRE PAG*/
