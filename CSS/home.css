@@ -1,3 +1,9 @@
+ 
+html, body {
+  overflow-x: hidden;/*PREVINE O SCROOL HORIZONTAL*/
+}
+ 
+ 
  /*HEADER CABEÇALHO*/
   
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
@@ -206,73 +212,74 @@
     font-size: 25px;
     margin-block: 34px;
     max-width: 423px;
+   
   }
-  @media only screen and (max-width:500px ) and (min-width: 375px) {
-    .container #paragrafo-sobreMim h3{
-      width: 100px;
-    }
-    .container #paragrafo-sobreMim h3{
-      width: 300px;
-    }
-  }
+ 
   
-  @media(max-width: 360px){
+  /* @media(max-width: 360px){
     .container #paragrafo-sobreMim h3{
       width: 325px;
-    }
-    
-  }
+    } 
+  } */
 
+  @media only screen and (min-width: 375px){
+    .container #text-iceCream-home h3{
+      width: 347px;
+    }
+  }
+ 
     /*IMAGEM EU SOBRE-MIM PAGE*/
   
   /* Estilização do container da imagem */
-  .container .img-container-sobre {
+  .container #img-container-logo {
     position: relative;
     display: flex;
     justify-content: flex-end; /* Alinha no canto direito */
     margin-right: 20px; /* Espaçamento da margem direita */
-    margin-top: -420px;
+    margin-top: -430px;
   }
   
 
 
   
   /*SOMBRA ATRÁS DA LOGO PAG HOME*/
-  .img-logo-home img{
+  #img-logo-home img{
    filter: drop-shadow(20px 0px 15px  #ea6298) ;
   }
   
   /* Estilo da imagem */
-  .img-logo-home img {
+   .img-logo-home img {
     position: relative;
     z-index: 2; /* Coloca a imagem na frente do quadrado */
-    width: 330px; /* Tamanho da imagem */
-    height: 357px;
+    width: 430px; /* Tamanho da imagem */
+    height: 457px;
     margin-right: 0; /* Remove margens adicionais à direita */
-    margin-top: -165px; /* Ajuste a sobreposição */
+    margin-top: -180px; /* Ajuste a sobreposição */
     left: 12px;
-  
-  
   }
 
   /*MEDIA PARA CO9LOCAR A IMAGEM EMBAIXO DO TEXTO MOBILE*/
   @media (max-width:375px) {
-    .img-logo-home img {
+    .container #img-container-logo img {
       top: 610px;
-      max-width: 340px;
-      max-height: 330px;
-      left: -2px;
-      position: relative;
+      max-width: 210px;
+      max-height: 210px;
+      position: center;
+      align-items: center;
+      display: flex;
+      left: -52px;
     }
   }
 
   @media (max-width:414px) {
-    .img-logo-home img {
+    .container #img-logo-home img {
       top: 610px;
-      max-width: 340px;
-      max-height: 330px;
-      left: -2px;
-      position: relative;
+      max-width: 310px;
+      max-height: 310px;
+      position: center;
+      align-items: center;
+      display: flex;
+      left: -52px;
     }
   }
   
@@ -305,51 +312,6 @@
   } 
   
   /*FIM DA IMAGEM MINHA SOBRE PAG*/
-
-  /*SEÇÃO IMAGENS SOVETES PAG HOME*/
-   .container .container-menu-sorvetes img{
-    max-width: 130px; /* Tamanho da imagem */
-    max-height: 157px;
-    margin-top: 300px;
-    cursor: pointer;
-    overflow-x: hidden;
-    overflow-y: hidden;
- 
-  }
-
-  /*SOMBRA ATRÁS DOS SORVETES PAG HOME*/
-  .container-menu-sorvetes img{
-    filter: drop-shadow(20px 0px 15px  #ea6298) ;
-   }
-
-   /*MEDIAS PARA ARRUMAR A POSIÇÃO DOO CONTAINER SORVETES NO MOBILE*/
-  @media (max-width:375px) {
-    .container .container-menu-sorvetes img{
-      margin: 0px;
-      top: -533px;
-      max-width: 110px;
-      flex-direction: column;
-      max-block-size: 233px;
-    }
-  }
-  @media (max-width:414px) {
-    .container .container-menu-sorvetes img{
-      margin: 0px;
-      margin-top: 0px;
-      max-width: 110px;
-      flex-direction: column;
-      margin-block: 0px;
-    }
-  }
-  @media (max-width:414px) {
-    .container .pag-home section{
-      margin: 0px;
-      margin-top: 0px;
-      
-    }
-  }
- 
-
 
 
     
