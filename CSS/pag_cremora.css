@@ -1,5 +1,6 @@
 html, body {
   overflow-x: hidden;/*PREVINE O SCROOL HORIZONTAL*/
+  
 }
  
  
@@ -189,13 +190,13 @@ body{
   z-index: 2;
 }
 
-:root {
+/* :root {
   --cor-rosa: #ae0464;
   --cor-azul: #073886;
   --cor-roxo: #71056f;
   --cor-verde:#1fe516;
   --cor-preto:#191919;
-}
+} */
 
 
 
@@ -207,6 +208,9 @@ section {
   background: linear-gradient(to right, salmon, DarkRed);
   position: relative; /* Adicione esta linha */
   z-index: 1; /* Adicione esta linha para garantir que a seção fique atrás do título */
+
+  /* background-image: url(../IMG/img-pagfundo-framboesa-cremora.png); */
+  /* background-repeat: no-repeat; */
 }
 .icone{
   width: 360px;
@@ -251,6 +255,8 @@ section {
   z-index: 5; /* Adicione esta linha para garantir que o contêiner fique atrás do título */
   padding: 0; /* Remova o padding se houver */
   margin: 0; /* Remova a margem se houver */
+
+  /* display: inline-block; */
 }
 
 
