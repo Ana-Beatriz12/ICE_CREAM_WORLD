@@ -314,4 +314,98 @@ html, body {
   /*FIM DA IMAGEM MINHA SOBRE PAG*/
 
 
+
+
+
+/*RODAPÉ FOOTER*/
+
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: #ef6abe;/*Cor do rodapé*/
+  /* background: linear-gradient(to right, salmon, DarkRed); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(239, 235, 235);
+  
+}
+
+.footer img{
+  width: 60px;
+  height: 60px;
+  align-items: start;
+  justify-content: start;
+  color: black;
+  margin-left: 34px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/*MEDIA QUERYS FOOTER RODAPÉ */
+@media only screen and (max-width: 375px) {
+
+  .footer {
+    height: 99px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
+  }
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 20px;
+  }
+
+  .footer img{
+    height: 39px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+
+@media only screen and (max-width: 414px) {
+
+  .footer {
+    height: 140px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
+  }
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 25px;
+  }
+
+  .footer img{
+    height: 49px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+@media only screen and (max-width: 430px) {
+
+  .footer {
+    height: 140px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
+  }
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 25px;
+  }
+
+  .footer img{
+    height: 49px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+
+
+
+
     
