@@ -1,0 +1,543 @@
+html, body {
+    overflow-x: hidden;/*PREVINE O SCROOL HORIZONTAL*/
+    
+  }
+   
+   
+   /*HEADER CABEÇALHO*/
+    
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+   * {
+       padding: 0;
+       margin: 0;
+       font-family: 'Inter', sans-serif;
+   }
+  
+   /* Ajuste no cabeçalho */
+   header {
+    background-color: #ef6abe;/*Cor do cabeçalho*/
+    box-shadow: 0px 3px 10px #a31f6a;
+    position: relative; /* Adicione esta linha */
+    z-index: 10; /* Adicione esta linha */
+  }
+  
+  /* Ajuste no menu mobile */
+  .mobile-menu {
+    display: none;
+    position: absolute; /* Mude para absolute */
+    top: 60px; /* Ajuste conforme necessário */
+    left: 0;
+    width: 100%;
+    background-color: #e23cdc;
+    z-index: 9; /* Adicione esta linha */
+  }
+  
+  /* Ajuste no botão do menu */
+  .mobile-menu-icon {
+    display: none;
+    z-index: 11; /* Adicione esta linha */
+  }
+  
+  /* Media query para mobile */
+  @media screen and (max-width: 730px) {
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu.open {
+        display: flex; /* Exibe o menu quando aberto */
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    color: #fff;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+  }
+  
+  .login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  @media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+  }
+  
+  .mobile-menu {
+    display: none; /* Oculta o menu mobile por padrão */
+    position: absolute;
+    top: 150px;
+    right: 0;
+    background-color: #ef6abe;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+  
+  .mobile-menu.open {
+    display: block; /* Mostra o menu quando estiver aberto */
+  }
+  
+  
+  /*FIM DO CABEÇALHO*/
+  
+  
+  /*PAG loja
+  ANIMAÇÃO SORVETES FUNDO*/
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  body{
+    min-height: 100vh;
+    
+    z-index: 2;
+  }
+  
+  /* :root {
+    --cor-rosa: #ae0464;
+    --cor-azul: #073886;
+    --cor-roxo: #71056f;
+    --cor-verde:#1fe516;
+    --cor-preto:#191919;
+  } */
+  
+  
+  section {
+    width: 100%;
+    height: 100vh; /* Mantenha a altura da seção */
+    overflow: hidden;
+    display: flex;
+    position: relative; /* Adicione esta linha */
+    z-index: 1; /* Adicione esta linha para garantir que a seção fique atrás do título */
+  
+    /*TESTE DE FUNDO PAGINA loja*/
+    background-image: url(../IMG/img-pageFundo-loja.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .icone{
+    width: 360px;
+    height: 80px;
+    background-image: url(../IMG/icon-framboesa-Pagloja.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: anima 5s linear infinite reverse;
+    animation-duration: calc(300s / var(--i));
+    z-index: 2;
+  }
+  
+  
+  @keyframes anima{
+    0%{
+      transform: translateY(100vh) scale(0) rotate(0deg) ;
+    }
+    100%{
+      transform: translateY(-10vh) scale(1) rotate(360deg)
+    }
+  
+  }
+  /*MEDIA PARA AUMENTAR O ICONE EM MOBILE FRAMBOESA*/
+    @media only screen and (max-width:375px){
+      .container .icone{
+        width:233px;
+        z-index: 10;
+        height: 80px;
+        background-image: url(../IMG/icon-framboesa-Pagloja.png);
+      }
+      .container{
+        z-index: 10;
+      }
+    }
+  
+  
+  /*TITULO loja*/
+  
+  .container {
+    position: relative; /* Adicione esta linha */
+    z-index: 5; /* Adicione esta linha para garantir que o contêiner fique atrás do título */
+    padding: 0; /* Remova o padding se houver */
+    margin: 0; /* Remova a margem se houver */
+    /* display: inline-block; */
+  }
+  
+  /*AQUI É PARA COOCAR A IMAGEM FRAMBOESA ATRÁS DO TITULO loja*/
+  .container .titulo-loja{
+    background-image: url(../IMG/img-pagfundo-framboesa-loja.png);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+  }
+  
+  @media only screen and (max-width:375px){
+    .container .titulo-loja{
+      width: 433px;
+      height: 220px;
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width:414px){
+    .container .titulo-loja{
+      width: 433px;
+      height: 220px;
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width:430px){
+    .container .titulo-loja{
+      width: 433px;
+      height: 220px;
+      display: flex;
+    }
+  }
+  
+  
+    /*SOMBRA ATRÁS DA IMAGEM loja*/
+    #img-container-loja img{
+      filter: drop-shadow(20px 0px 15px  #440101) ;
+     }
+  
+  
+  .container .titulo-loja h1 {
+      font-size: 5em;
+      margin-left: 65px;
+      padding-top: 123px; /* DÁ ESPAÇAMENTO DO TITULO DO CABEÇALHO */
+      margin-bottom: 6px;
+      color: rgb(241, 237, 237);
+      text-transform: uppercase;
+      position: relative; /* Adicione esta linha */
+      z-index: 10; /* Adicione esta linha para garantir que o título fique na frente */
+  }
+  
+  /*MEDIA PARA ARRUMAR O TITULO EM MOBILE*/
+  @media only screen and (max-width:375px){
+    .container .titulo-loja h1{
+     width: 13px;
+     height: 12px;
+     font-size: 3.5em;
+    }
+  }
+  
+  @media only screen and (max-width:414px){
+    .container .titulo-loja h1{
+     width: 13px;
+     height: 12px;
+     font-size: 3.9em;
+    }
+  }
+  
+  @media only screen and (max-width:430px){
+    .container .titulo-loja h1{
+     width: 13px;
+     height: 12px;
+     font-size: 3.9em;
+    }
+  }
+  
+  
+   /*DESCRIÇÃO loja*/
+   .container #text-iceCream-loja h3{
+    color: rgb(237, 230, 230);
+    font-size: 33px;
+    margin-block: 34px;
+    width: 523px;
+    margin-left: 65px;
+   
+  }
+  
+  @media only screen and (max-width: 375px){
+    .container #text-iceCream-loja h3{
+      width: 287px;/*width: 287px;*/
+      margin-block: 4px;/*margin-block: 134px;*/
+      /* top: -233px; */
+    }
+  }
+  
+  
+  @media only screen and (max-width: 414px){
+    .container #text-iceCream-loja h3{
+      width: 310px;
+      margin-block: 134px;
+    }
+  }
+  @media only screen and (max-width: 430px){
+    .container #text-iceCream-loja h3{
+      width: 310px;
+      margin-block: 134px;
+    }
+  }
+  
+  
+  /*IMAGEM MILK-SHAKE loja*/
+    
+    /* Estilização do container da imagem */
+    .container #img-container-loja {
+      position: relative;
+      display: flex;
+      justify-content: flex-end; /* Alinha no canto direito */
+      margin-right: 20px; /* Espaçamento da margem direita */
+      margin-top: -330px;
+    }
+  
+    /* Estilo da imagem do milkshake loja */
+    .img-container-loja img {
+      position: absolute; /* Use absolute para posicionar a imagem em relação ao contêiner */
+      top: -120px; /* Ajuste conforme necessário */
+      left: 130%; /* Ajuste conforme necessário */
+      transform:rotate(-30deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
+      width: 60vh; /* Ajuste o tamanho da imagem conforme necessário */
+      height: auto; /* Mantém a proporção da imagem */
+      
+    }
+    
+  
+  /*MEDIAS PARA A IMEGM SUMIR EM MOBILE*/
+  
+  
+  
+    /*MEDIAS PARA A IMAGEM MILKSHAKE EM MOBILE*/
+  
+    @media only screen and (max-width:375px){
+      .container .img-container-loja img{
+        margin-top: 233px;
+        max-width: 310px;
+        max-height: 310px;
+        position: center;
+        align-items: center;
+        display: flex;
+        left: -12px;
+        transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
+      }
+    }
+  
+    @media only screen and (max-width:414px){
+      .container .img-container-loja img{
+        margin-top: 232px;
+        max-width: 310px;
+        max-height: 310px;
+        position: center;
+        align-items: center;
+        display: flex;
+        left: -12px;
+        transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
+      }
+    }
+  
+    @media only screen and (max-width:430px){
+      .container .img-container-loja img{
+        top: 312px;
+        max-width: 310px;
+        height: 330px;
+        position: center;
+        align-items: center;
+        display: flex;
+        left: -12px;
+        transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
+      }
+    }
+  
+    @media only screen and (max-width:390px){
+      .container .img-container-loja img{
+        top: 112px;
+        max-width: 310px;
+        height: 330px;
+        position: center;
+        align-items: center;
+        display: flex;
+        left: -12px;
+        transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
+      }
+    }
+  
+  
+  
+  
+  /*RODAPÉ FOOTER*/
+  
+  .footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ef6abe;/*Cor do rodapé*/
+    /* background: linear-gradient(to right, salmon, DarkRed); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(239, 235, 235);
+    
+  }
+  
+  .footer img{
+    width: 60px;
+    height: 60px;
+    align-items: start;
+    justify-content: start;
+    color: black;
+    margin-left: 34px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /*MEDIA QUERYS FOOTER RODAPÉ */
+  @media only screen and (max-width: 375px) {
+  
+    .footer {
+      height: 99px;
+      /*width: 3px;/*largura do rodapé */
+      display: inline-block;/*faz com que todos fiquem na mesma linha*/
+      
+    }
+    .footer p{
+      text-align: center;
+      text-transform: capitalize;/*capitalize*/
+      font-size: 20px;
+    }
+  
+    .footer img{
+      height: 39px;
+      /* width: 33px; */
+      display: inline-block;/*faz com que todos fiquem na mesma linha*/
+  }}
+  
+  
+  @media only screen and (max-width: 414px) {
+  
+    .footer {
+      height: 140px;
+      /*width: 3px;/*largura do rodapé */
+      display: inline-block;/*faz com que todos fiquem na mesma linha*/
+      
+    }
+    .footer p{
+      text-align: center;
+      text-transform: capitalize;/*capitalize*/
+      font-size: 25px;
+    }
+  
+    .footer img{
+      height: 49px;
+      /* width: 33px; */
+      display: inline-block;/*faz com que todos fiquem na mesma linha*/
+  }}
+  
+  @media only screen and (max-width: 430px) {
+  
+    .footer {
+      height: 140px;
+      /*width: 3px;/*largura do rodapé */
+      display: inline-block;/*faz com que todos fiquem na mesma linha*/
+      
+    }
+    .footer p{
+      text-align: center;
+      text-transform: capitalize;/*capitalize*/
+      font-size: 25px;
+    }
+  
+    .footer img{
+      height: 49px;
+      /* width: 33px; */
+      display: inline-block;/*faz com que todos fiquem na mesma linha*/
+  }}
+  
+  
+  

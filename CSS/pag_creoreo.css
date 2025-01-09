@@ -175,8 +175,8 @@ html, body {
 /*FIM DO CABEÇALHO*/
 
 
-/*PAG CREMORA
-ANIMAÇÃO SORVETES FUNDO*/
+/*PAG CREOREO
+ANIMAÇÃO OREO FUNDO*/
 
 *{
   margin: 0;
@@ -187,7 +187,6 @@ ANIMAÇÃO SORVETES FUNDO*/
 
 body{
   min-height: 100vh;
-  
   z-index: 2;
 }
 
@@ -205,19 +204,17 @@ section {
   height: 100vh; /* Mantenha a altura da seção */
   overflow: hidden;
   display: flex;
-  background: linear-gradient(to right, salmon, DarkRed);
+  background: linear-gradient(to right, black, rgb(214, 205, 205));
   position: relative; /* Adicione esta linha */
   z-index: 1; /* Adicione esta linha para garantir que a seção fique atrás do título */
-
-  /*TESTE DE FUNDO PAGINA CREMORA*/
-  background-image: url(../IMG/img-pagFundo-cremora.png);
+  background-image: url(../IMG/img-pagFundo-creoreo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .icone{
   width: 360px;
   height: 80px;
-  background-image: url(../IMG/icon-framboesa-Pagcremora.png);
+  background-image: url(../IMG/icon-oreo-pagCreoreo.png);
   background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -236,13 +233,13 @@ section {
   }
 
 }
-/*MEDIA PARA AUMENTAR O ICONE EM MOBILE FRAMBOESA*/
+/*MEDIA PARA AUMENTAR O ICONE EM MOBILE CREOREO*/
   @media only screen and (max-width:375px){
     .container .icone{
       width:233px;
       z-index: 10;
       height: 80px;
-      background-image: url(../IMG/icon-framboesa-Pagcremora.png);
+      background-image: url(../IMG/icon-oreo-pagCreoreo.png);
     }
     .container{
       z-index: 10;
@@ -250,7 +247,8 @@ section {
   }
 
 
-/*TITULO CREMORA*/
+  
+/*TITULO CREOREO*/
 
 .container {
   position: relative; /* Adicione esta linha */
@@ -260,24 +258,27 @@ section {
   /* display: inline-block; */
 }
 
-/*AQUI É PARA COOCAR A IMAGEM FRAMBOESA ATRÁS DO TITULO CREMORA*/
-.container .titulo-cremora{
-  background-image: url(../IMG/img-pagfundo-framboesa-cremora.png);
+/*AQUI É PARA COLOCAR A IMAGEM CREOREO ATRÁS DO TITULO CREMORA*/
+.container .titulo-creoreo{
+  background-image: url(../IMG/img-oreoFundo-pag-Creoreo.png);
   background-repeat: no-repeat;
   width: auto;
   height: auto;
 }
 
+
 @media only screen and (max-width:375px){
-  .container .titulo-cremora{
+  .container .titulo-creoreo{
     width: 433px;
     height: 220px;
     display: flex;
   }
 }
 
+
+
 @media only screen and (max-width:414px){
-  .container .titulo-cremora{
+  .container .titulo-creoreo{
     width: 433px;
     height: 220px;
     display: flex;
@@ -285,7 +286,7 @@ section {
 }
 
 @media only screen and (max-width:430px){
-  .container .titulo-cremora{
+  .container .titulo-creoreo{
     width: 433px;
     height: 220px;
     display: flex;
@@ -293,27 +294,28 @@ section {
 }
 
 
-  /*SOMBRA ATRÁS DA IMAGEM CREMORA*/
-  #img-container-cremora img{
-    filter: drop-shadow(20px 0px 15px  #440101) ;
-   }
+/*SOMBRA ATRÁS DA IMAGEM CREOREO*/
+  #img-container-creoreo img{
+  filter: drop-shadow(20px 0px 15px  #e6dada) ;
+  }
 
 
-.container .titulo-cremora h1 {
-    color: white;
-    font-size: 5em;
-    margin-left: 45px;
-    padding-top: 123px; /* DÁ ESPAÇAMENTO DO TITULO DO CABEÇALHO */
-    margin-bottom: 6px;
-    color: white;
-    text-transform: uppercase;
-    position: relative; /* Adicione esta linha */
-    z-index: 10; /* Adicione esta linha para garantir que o título fique na frente */
-}
+
+.container .titulo-creoreo h1 {
+  color: white;
+  font-size: 5em;
+  margin-left: 45px;
+  padding-top: 123px; /* DÁ ESPAÇAMENTO DO TITULO DO CABEÇALHO */
+  margin-bottom: 6px;
+  color: white;
+  text-transform: uppercase;
+  position: relative; /* Adicione esta linha */
+  z-index: 10; /* Adicione esta linha para garantir que o título fique na frente */
+}   
 
 /*MEDIA PARA ARRUMAR O TITULO EM MOBILE*/
 @media only screen and (max-width:375px){
-  .container .titulo-cremora h1{
+  .container .titulo-creoreo h1{
    width: 13px;
    height: 12px;
    font-size: 3.5em;
@@ -321,24 +323,24 @@ section {
 }
 
 @media only screen and (max-width:414px){
-  .container .titulo-cremora h1{
+  .container .titulo-creoreo h1{
    width: 13px;
    height: 12px;
    font-size: 3.9em;
   }
 }
+
 
 @media only screen and (max-width:430px){
-  .container .titulo-cremora h1{
+  .container .titulo-creoreo h1{
    width: 13px;
    height: 12px;
    font-size: 3.9em;
   }
 }
 
-
  /*DESCRIÇÃO CREMORA*/
- .container #text-iceCream-cremora h3{
+ .container #text-iceCream-creoreo h3{
   color: white;
   font-size: 29px;
   margin-block: 34px;
@@ -348,32 +350,32 @@ section {
 }
 
 @media only screen and (max-width: 375px){
-  .container #text-iceCream-cremora h3{
+  .container #text-iceCream-creoreo h3{
     width: 287px;/*width: 287px;*/
     margin-block: 4px;/*margin-block: 134px;*/
     /* top: -233px; */
   }
 }
 
-
 @media only screen and (max-width: 414px){
-  .container #text-iceCream-cremora h3{
+  .container #text-iceCream-creoreo h3{
     width: 310px;
     margin-block: 134px;
   }
 }
+
 @media only screen and (max-width: 430px){
-  .container #text-iceCream-cremora h3{
+  .container #text-iceCream-creoreo h3{
     width: 310px;
     margin-block: 134px;
   }
 }
 
 
-/*IMAGEM MILK-SHAKE CREMORA*/
+/*IMAGEM MILK-SHAKE CREOREO*/
   
   /* Estilização do container da imagem */
-  .container #img-container-cremora {
+  .container #img-container-creoreo {
     position: relative;
     display: flex;
     justify-content: flex-end; /* Alinha no canto direito */
@@ -381,8 +383,9 @@ section {
     margin-top: -330px;
   }
 
-  /* Estilo da imagem do milkshake cremora */
-  .img-container-cremora img {
+  
+  /* Estilo da imagem do milkshake creoreo */
+  .img-container-creoreo img {
     position: absolute; /* Use absolute para posicionar a imagem em relação ao contêiner */
     top: -120px; /* Ajuste conforme necessário */
     left: 130%; /* Ajuste conforme necessário */
@@ -391,65 +394,63 @@ section {
     height: auto; /* Mantém a proporção da imagem */
     
   }
-  
-
-/*MEDIAS PARA A IMEGM SUMIR EM MOBILE*/
-
 
 
   /*MEDIAS PARA A IMAGEM MILKSHAKE EM MOBILE*/
 
   @media only screen and (max-width:375px){
-    .container .img-container-cremora img{
-      margin-top: 233px;
-      max-width: 310px;
-      max-height: 310px;
-      position: center;
-      align-items: center;
+    .container .img-container-creoreo img{
+      margin-top: 33px;
+      width: -10px;
+      height: -10px;
+      /* position: center;
+      align-items: center; */
       display: flex;
-      left: -12px;
+      margin-left: -122px;
       transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
     }
   }
 
-  @media only screen and (max-width:414px){
-    .container .img-container-cremora img{
-      margin-top: 232px;
-      max-width: 310px;
-      max-height: 310px;
-      position: center;
-      align-items: center;
-      display: flex;
-      left: -12px;
-      transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
-    }
+@media only screen and (max-width:414px){
+  .container .img-container-creoreo img{
+    margin-top: 42px;
+    width: 610px;
+    height: 510px;
+    position: center;
+    align-items: center;
+    display: flex;
+    margin-left: -2px;
+    transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
   }
+}
 
-  @media only screen and (max-width:430px){
-    .container .img-container-cremora img{
-      top: 312px;
-      max-width: 310px;
-      height: 330px;
-      position: center;
-      align-items: center;
-      display: flex;
-      left: -12px;
-      transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
-    }
-  }
 
-  @media only screen and (max-width:390px){
-    .container .img-container-cremora img{
-      top: 112px;
-      max-width: 310px;
-      height: 330px;
-      position: center;
-      align-items: center;
-      display: flex;
-      left: -12px;
-      transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
-    }
+
+@media only screen and (max-width:390px){
+  .container .img-container-creoreo img{
+    margin-top: -10px;
+    width: 310px;
+    height: 350px;
+    position: center;
+    align-items: center;
+    display: flex;
+    margin-left: -4px;
+    transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
   }
+}
+
+@media only screen and (max-width:430px){
+  .container .img-container-creoreo img{
+    top: 330px;
+    width: 310px;
+    height: 350px;
+    position: center;
+    align-items: center;
+    display: flex;
+    left: 64px;
+    transform:rotate(-1deg);/*faz com que a imegm inclinesse um pouco para o lado.*/
+  }
+}
 
 
 
