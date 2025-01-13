@@ -189,7 +189,7 @@ html, body {
 
 section{
     width: 100%;
-    height: 100vh; /* Mantenha a altura da seção */
+    height: 45vh; /* Mantenha a altura da seção */
     overflow: hidden;
     display: flex;
     background: linear-gradient(to right, rgb(251, 237, 237), rgb(48, 206, 254));
@@ -208,31 +208,174 @@ section{
     /* display: inline-block; */
   } 
 
+  .container .titulo-produtos h1 {
+    font-size: 4em;
+    margin-left: 65px;
+    padding-top: 123px; /* DÁ ESPAÇAMENTO DO TITULO DO CABEÇALHO */
+    margin-bottom: 6px;
+    color: rgb(247, 84, 181);
+    text-transform: uppercase;
+    position: relative; /* Adicione esta linha */
+    z-index: 10; /* Adicione esta linha para garantir que o título fique na frente */
+    align-items: center;
+    text-align: center;
+}
+
+/*MEDIA PARA ARRUMAR O TITULO EM MOBILE*/
+@media only screen and (max-width:375px){
+  .container .titulo-produtos h1{
+   width: 5px;
+   height: 12px;
+   font-size: 3em;
+  }
+}
+
+@media only screen and (max-width:360px){
+  .container .titulo-produtos h1{
+   width: 13px;
+   height: 12px;
+   font-size: 2em;
+   margin-left:12px;
+  }
+}
+
+@media only screen and (max-width:414px){
+  .container .titulo-produtos h1{
+   width: 13px;
+   height: 12px;
+   font-size: 3.9em;
+  }
+}
+
+@media only screen and (max-width:430px){
+  .container .titulo-produtos h1{
+   width: 13px;
+   height: 12px;
+   font-size: 3.9em;
+  }
+}
+
+.container .produtosCremora{
+  background: linear-gradient(to right, #FBAB76, #892F2D);
+ width: 230px;
+ height: 633px;
+ margin: 15px;
+ border-radius: 10px 10px  50px 50px;
+}
+
+.produtosCremora{
+ filter: drop-shadow(20px 0px 15px  #440101) ;
+}
+
+.produtosCremoraImage img{
+ filter: drop-shadow(20px 0px 15px  #440101) ;
+}
+
+.container #titulo-cremora h1{
+ align-items: center;
+ text-align: center;
+ color:white ;
+ padding-top: 33px;
+ text-transform: uppercase;
+ margin: 0px;
+
+}
+
+.container .produtosCremoraImage img{
+ margin-top: 100px;
+ width: 233px;
+ height: 400px;
+ margin-left: -40px;
+}
+
+
+/*RODAPÉ FOOTER*/
+  
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: #ef6abe;/*Cor do rodapé*/
+  /* background: linear-gradient(to right, salmon, DarkRed); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(239, 235, 235);
+  
+}
+
+.footer img{
+  width: 60px;
+  height: 60px;
+  align-items: start;
+  justify-content: start;
+  color: black;
+  margin-left: 34px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/*MEDIA QUERYS FOOTER RODAPÉ */
+@media only screen and (max-width: 375px) {
+
+  .footer {
+    height: 99px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
+  }
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 20px;
+  }
+
+  .footer img{
+    height: 39px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+
+@media only screen and (max-width: 414px) {
+
+  .footer {
+    height: 140px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
+  }
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 25px;
+  }
+
+  .footer img{
+    height: 49px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+@media only screen and (max-width: 430px) {
+
+  .footer {
+    height: 140px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
+  }
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 25px;
+  }
+
+  .footer img{
+    height: 49px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+
+
  
-  @media only screen and (max-width:375px){
-    .container .titulo-moshake{
-      width: 433px;
-      height: 220px;
-      display: flex;
-    }
-  }
-  
-  
-  
-  @media only screen and (max-width:414px){
-    .container .titulo-moshake{
-      width: 433px;
-      height: 220px;
-      display: flex;
-    }
-  }
-  
-  @media only screen and (max-width:430px){
-    .container .titulo-moshake{
-      width: 433px;
-      height: 220px;
-      display: flex;
-    }
-  }
-
-
