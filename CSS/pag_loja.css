@@ -209,18 +209,18 @@ html, body {
     z-index: 1; /* Adicione esta linha para garantir que a seção fique atrás do título */
   
     /*TESTE DE FUNDO PAGINA loja*/
-    background-image: url(../IMG/img-pageFundo-loja.png);
+    background-image: url(../IMG/img-pagFundo-loja2.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
   .icone{
     width: 360px;
     height: 80px;
-    background-image: url(../IMG/icon-framboesa-Pagloja.png);
+    background-image: url(../IMG/icon_morango-moshake.png);
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
-    animation: anima 5s linear infinite reverse;
+    animation: anima 5s linear infinite ;/*reverse*/
     animation-duration: calc(300s / var(--i));
     z-index: 2;
   }
@@ -228,25 +228,15 @@ html, body {
   
   @keyframes anima{
     0%{
-      transform: translateY(100vh) scale(0) rotate(0deg) ;
+      transform: translateY(100vh) scale(0) rotate(0deg);
     }
     100%{
-      transform: translateY(-10vh) scale(1) rotate(360deg)
+      transform: translateY(-10vh) scale(1) rotate(360deg);
     }
   
   }
-  /*MEDIA PARA AUMENTAR O ICONE EM MOBILE FRAMBOESA*/
-    @media only screen and (max-width:375px){
-      .container .icone{
-        width:233px;
-        z-index: 10;
-        height: 80px;
-        background-image: url(../IMG/icon-framboesa-Pagloja.png);
-      }
-      .container{
-        z-index: 10;
-      }
-    }
+
+
   
   
   /*TITULO loja*/
@@ -256,7 +246,23 @@ html, body {
     z-index: 5; /* Adicione esta linha para garantir que o contêiner fique atrás do título */
     padding: 0; /* Remova o padding se houver */
     margin: 0; /* Remova a margem se houver */
+    /* overflow: hidden; */
     /* display: inline-block; */
+    /* backdrop-filter: blur(10px);
+
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    margin-block: 43px; */
+    
+    
+  }
+
+  /*MEDIAS PARA O CONTAINER BLUR EM MOBILE*/
+  @media only screen and (max-width:375px){
+    .container{
+      height: 700px;
+    }
   }
   
   /*AQUI É PARA COOCAR A IMAGEM FRAMBOESA ATRÁS DO TITULO loja*/
@@ -303,7 +309,7 @@ html, body {
       margin-left: 65px;
       padding-top: 123px; /* DÁ ESPAÇAMENTO DO TITULO DO CABEÇALHO */
       margin-bottom: 6px;
-      color: rgb(241, 237, 237);
+      color: rgb(232, 38, 125);
       text-transform: uppercase;
       position: relative; /* Adicione esta linha */
       z-index: 10; /* Adicione esta linha para garantir que o título fique na frente */
@@ -337,7 +343,7 @@ html, body {
   
    /*DESCRIÇÃO loja*/
    .container #text-iceCream-loja h3{
-    color: rgb(237, 230, 230);
+    color: rgb(232, 38, 125);
     font-size: 33px;
     margin-block: 34px;
     width: 523px;
