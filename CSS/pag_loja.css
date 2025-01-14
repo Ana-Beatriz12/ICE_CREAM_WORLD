@@ -309,7 +309,7 @@ html, body {
       margin-left: 65px;
       padding-top: 123px; /* DÁ ESPAÇAMENTO DO TITULO DO CABEÇALHO */
       margin-bottom: 6px;
-      color: rgb(232, 38, 125);
+      color: rgb(14, 13, 14);
       text-transform: uppercase;
       position: relative; /* Adicione esta linha */
       z-index: 10; /* Adicione esta linha para garantir que o título fique na frente */
@@ -343,7 +343,7 @@ html, body {
   
    /*DESCRIÇÃO loja*/
    .container #text-iceCream-loja h3{
-    color: rgb(232, 38, 125);
+    color: rgb(8, 0, 4);
     font-size: 33px;
     margin-block: 34px;
     width: 523px;
