@@ -185,19 +185,14 @@ html, body {
   body{
     min-height: 100vh;
     z-index: 2;
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    
   }
 
-section{
-    width: 100%;
-    height: 45vh; /* Mantenha a altura da seção */
-    overflow: hidden;
-    display: flex;
-    background: linear-gradient(to right, rgb(251, 237, 237), rgb(48, 206, 254));
-    position: relative; /* Adicione esta linha */
-    z-index: 1; /* Adicione esta linha para garantir que a seção fique atrás do título */
-   
-  }
-
+ 
  /*TITULO */
   
  .container {
@@ -227,6 +222,8 @@ section{
    width: 5px;
    height: 12px;
    font-size: 3em;
+   margin-bottom: 133px;
+   margin-left: -132px;
   }
 }
 
@@ -236,6 +233,8 @@ section{
    height: 12px;
    font-size: 2em;
    margin-left:12px;
+   margin-bottom: 133px;
+   margin-left: -132px;
   }
 }
 
@@ -244,6 +243,8 @@ section{
    width: 13px;
    height: 12px;
    font-size: 3.9em;
+   margin-bottom: 133px;
+   margin-left: -132px;
   }
 }
 
@@ -252,10 +253,138 @@ section{
    width: 13px;
    height: 12px;
    font-size: 3.9em;
+   margin-bottom: 133px;
+   margin-left: -132px;
   }
 }
 
-.container .produtosCremora{
+
+/*TESTE CARDS PRODUTOS*/
+
+
+
+.container{
+
+  flex-wrap: wrap;
+  margin-bottom: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px 50px ;/*dá um espaçamento entre os cards, um ao lado do outro IMPORTANTE*/
+}
+
+.container .card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0,0,0,.15);
+  background: #f7f7f7;
+  transition: .5s;
+}
+
+.container .card:hover{
+  height: 400px;
+  /* transform:rotate(-5deg); */
+}
+
+.container .card .caixaImg{
+  position:absolute;
+  width: 300px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  top: 20px;
+  transition: .5s;
+}
+
+.container .card .caixaImg img{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  border-radius: 7px;
+}
+
+.container .card .conteudo{
+  position:absolute;
+  top: 250px;
+  width: 100%;
+  height: 35px;
+  padding:0 30px;
+  overflow: hidden;
+  text-align: center;
+  transition: .5s;
+}
+
+.container .card:hover .conteudo{
+  top: 150px;
+  height: 250px;
+}
+
+.container .card:hover .caixaImg{
+  top: -80px;
+  scale: .75;
+  filter: drop-shadow(20px 0px 15px  #440101);
+}
+
+.container .card .conteudo h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--cor);
+}
+
+.container .card .conteudo p{
+  color: #333;
+}
+
+.container .card .conteudo a{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  background:var(--cor) ;
+  color: #fff;
+  border-color: var(--cor);
+  font-weight:500;
+  filter: drop-shadow(20px 0px 15px  var(--cor));
+  transition: .5s;
+}
+
+.container .card .conteudo a:hover{
+  background: black;
+  transition: .5s;
+}
+
+
+
+
+
+/*SOMBRA ATRÁS DOs CARD BLUR*/
+.container div.card.cremora{
+  box-shadow: 50px 20px 80px -30px  #d10d1d;
+}
+.container div.card.creoreo{
+  box-shadow: 50px 20px 80px -30px  #261C1B;
+}
+.container div.card.moshake{
+  box-shadow: 50px 20px 80px -30px  #f02c40;
+}
+.container div.card.shakemelo{
+  box-shadow: 50px 20px 80px -30px  #f39302;
+}
+
+/* .container .produtosCremora{
   background: linear-gradient(to right, #FBAB76, #892F2D);
  width: 230px;
  height: 633px;
@@ -287,6 +416,10 @@ section{
  height: 400px;
  margin-left: -40px;
 }
+ */
+
+
+
 
 
 /*RODAPÉ FOOTER*/
