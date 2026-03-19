@@ -23,7 +23,7 @@
 ###
 
 <div align="center">
-  <img height="420" width="100%" src="./img-readme.png"  />
+  <img height="420" width="100%" src="/IMG/img-readme.png"  />
 </div>
 
 ###
@@ -131,6 +131,10 @@
 ## 🌍 Acesse online
 
 👉 [Ice Cream World](https://ice-cream-world.netlify.app/)
+
+## ❤ Acesse o Design:
+
+👉 [Ice Cream World](https://www.figma.com/design/oSoydfZtwd9X24emnrAfDd/ICE-CREAM-WORLD?node-id=1-135&t=7WNiQreTGRvg03bW-1)
 
 ###
 
